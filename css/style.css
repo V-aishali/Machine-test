@@ -397,6 +397,7 @@ body {
     background: #FFFFFF;
     border-radius: 16px;
     padding: 30px;
+    object-fit: contain;
 }
 
 /*Video-Section-Css*/
@@ -406,6 +407,9 @@ body {
 .videoImg {
     width: 100%;
     position: relative;
+}
+.videoImg img {
+    width: 100%;
 }
 .card-overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -463,11 +467,12 @@ body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     background: #0C7D9F;
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
+    border: 1px solid rgb(235, 235, 235);
 }
 
 .video-play-button:after {
@@ -483,6 +488,7 @@ body {
     background: #0C7D9F;
     border-radius: 50%;
     transition: all 200ms;
+    border: 1px solid #fff;
 }
 
 .video-play-button:hover:after {
@@ -668,6 +674,17 @@ body {
         padding: 40px 60px;
     }
 
+    .videoImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .videoImg {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
     .formInput {
         width: 100% !important;
     }
@@ -692,13 +709,24 @@ body {
         width: 100% !important;
     }
 
+    .videoImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .videoImg {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
     .formpart {
         margin-bottom: 20px;
     }
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
     .input-group .border-lable-flt {
         display: block !important;
     }
@@ -734,10 +762,33 @@ body {
 
     .servicesBlock {
         margin-bottom: 30px;
+    }
+    /* .video-play-button:after {
+        width: 55px;
+        height: 55px;
+    }
+
+    .video-play-button:before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video-play-button span {
+        border-left: 20px solid #fff;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 8px;
+        left: 5px;
+    }
+    .videocntnt {
+        bottom: 2%;
+    } */
+    .footerImg {
+        margin-left: 0px;
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 766px) {
     .input-group .border-lable-flt {
         display: block !important;
     }
@@ -773,6 +824,30 @@ body {
 
     .servicesBlock {
         margin-bottom: 30px;
+    }
+    .video-play-button:after {
+        width: 55px;
+        height: 55px;
+    }
+
+    .video-play-button:before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video-play-button span {
+        border-left: 20px solid #fff;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 8px;
+        left: 5px;
+    }
+    .videocntnt {
+        bottom: 2%;
+    }
+    .footerImg {
+        margin-left: 0px;
+        margin-bottom: 20px;
     }
 }
 
@@ -785,6 +860,13 @@ body {
         font-size: 12px !important;
     }
 
+    /* .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        display: block !important;
+    }
+
+    .headercontact {
+        justify-content: normal !important;
+    } */
     .navbar-brand.headerLogo img {
         width: 190px;
     }
@@ -819,18 +901,45 @@ body {
         margin-bottom: 30px;
     }
     .videocntnt h5 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 40px;
+        margin-bottom: 0px;
+    }
+    .videocntnt p {
+        font-size: 12px;
+        line-height: 0px;
     }
     .videocntnt {
-        bottom: 4%;
+        bottom: 1%;
     }
     .textBox h5 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .textBox p {
+        font-size: 16px;
+        line-height: 22px;
     }
     .footerImg {
         margin-left: 0px;
         margin-bottom: 20px;
+    }
+
+    .video-play-button:after {
+        width: 55px;
+        height: 55px;
+    }
+
+    .video-play-button:before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video-play-button span {
+        border-left: 20px solid #fff;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 8px;
+        left: 5px;
     }
 }
